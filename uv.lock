@@ -312,6 +312,18 @@ wheels = [
 ]
 
 [[package]]
+name = "machine"
+version = "0.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pycrypto" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/47/0f/3f62271c52fed253f307d25c3528c180f6cb7ca086dd8a25da093c59fe5b/machine-0.0.1.tar.gz", hash = "sha256:0a1fc0fa10d25f6565d05faece2f949dba09ee4e6dca7520c8453d498783fc9a", size = 3978, upload-time = "2016-06-10T22:56:59.592Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c0/ce/0c62600971471aabe55865c7100a886f3c2cad767e3a0af2dff717d08e68/machine-0.0.1-py2.py3-none-any.whl", hash = "sha256:8f7fe1048d1946bfc5bdb20aba31ecc7800b34a9c06d3ed32c02b59d5bb4dfb4", size = 4158, upload-time = "2016-06-10T22:56:52.308Z" },
+]
+
+[[package]]
 name = "matplotlib-inline"
 version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -368,10 +380,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "ipykernel" },
+    { name = "machine" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "ipykernel", specifier = ">=7.1.0" }]
+requires-dist = [
+    { name = "ipykernel", specifier = ">=7.1.0" },
+    { name = "machine", specifier = ">=0.0.1" },
+]
 
 [[package]]
 name = "platformdirs"
@@ -446,6 +462,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/fe/cf/d2d3b9f5699fb1e46
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a0/e3/59cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe/pycparser-2.23-py3-none-any.whl", hash = "sha256:e5c6e8d3fbad53479cab09ac03729e0a9faf2bee3db8208a550daf5af81a5934", size = 118140, upload-time = "2025-09-09T13:23:46.651Z" },
 ]
+
+[[package]]
+name = "pycrypto"
+version = "2.6.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/60/db/645aa9af249f059cc3a368b118de33889219e0362141e75d4eaf6f80f163/pycrypto-2.6.1.tar.gz", hash = "sha256:f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c", size = 446240, upload-time = "2014-06-20T08:10:20.813Z" }
 
 [[package]]
 name = "pygments"
